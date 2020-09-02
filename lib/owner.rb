@@ -29,12 +29,4 @@ class Owner
     self.all.clear
   end
 
-  def cat_collector
-    @cats << self
-  end
-
-  def cats
-    self.cats
-  end
-
 end
