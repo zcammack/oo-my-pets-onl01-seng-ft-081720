@@ -31,7 +31,7 @@ class Owner
   end
 
   def cats
-    my_cats = Cat.all.select { |owner| self.name }
+    my_cats = Cat.all.select { |cat| cat }
     my_cats
   end
 
