@@ -28,6 +28,10 @@ class Owner
     self.all.clear
   end
 
+  def add_cat(cat)
+    @cats << cat
+  end
+
   def cats
 
   end
