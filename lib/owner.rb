@@ -8,8 +8,6 @@ class Owner
   def initialize(name)
     @name = name
     @species = "human"
-    @cats = []
-    @dogs = []
     @@all << self
   end
 
@@ -38,7 +36,6 @@ class Owner
   end
 
   def buy_cat(cat)
-    Cat.all.select { |cat| cat == cat }
-    @cats << cat
+    Cat.new(cat)self
   end
 end
