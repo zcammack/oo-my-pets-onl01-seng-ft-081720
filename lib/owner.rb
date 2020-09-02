@@ -33,6 +33,7 @@ class Owner
   def cats(owner)
     my_cat = Cats.all.select { |owner| self.owner }
     @cats << my_cat
+    @cats
   end
 
   def dogs
