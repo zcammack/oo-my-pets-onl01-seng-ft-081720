@@ -32,6 +32,6 @@ class Owner
   end
 
   def dogs
-    @dogs
+    Dog.all.select { |dog| dog }
   end
 end
