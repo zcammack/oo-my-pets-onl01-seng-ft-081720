@@ -4,6 +4,8 @@ class Owner
 
   @@all = []
 
+  @@pets = []
+
   def initialize(name)
     @name = name
     @species = "human"
@@ -28,12 +30,24 @@ class Owner
     self.all.clear
   end
 
-  def add_cat(cat)
-    @cats << cat
-  end
-
   def cats
     @cats
   end
 
+  def dogs
+    @dogs
+  end
+
+  def buy_cat
+    
+  end
+
+  def buy_dog
+
+  end
+
+  def list_pets
+    @@pets
+  end
+  
 end
