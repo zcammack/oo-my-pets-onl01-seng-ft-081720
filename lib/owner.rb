@@ -31,7 +31,7 @@ class Owner
   end
 
   def cats
-
+    self.cats
   end
 
 end
