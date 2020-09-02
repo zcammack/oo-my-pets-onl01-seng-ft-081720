@@ -9,6 +9,7 @@ class Cat
     @name = name
     @owner = owner
     @mood = "nervous"
+    Owner.cats << self
     @@all << self
   end
 
