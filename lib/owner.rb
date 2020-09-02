@@ -31,7 +31,7 @@ class Owner
   end
 
   def cats
-    my_cat = Cat.all.select { |owner| }
+    my_cat = Cat.all.select { |owner| self.owner }
     @cats << my_cat
     @cats
   end
