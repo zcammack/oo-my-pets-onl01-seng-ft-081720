@@ -2,15 +2,15 @@ class Owner
 
   attr_reader :name, :species
 
-  attr_accessor :cat_collection, :dog_collection
+  attr_accessor :cats, :dogs
 
   @@all = []
 
   def initialize(name)
     @name = name
     @species = "human"
-    @cat_collection = []
-    @dog_collection = []
+    @cats = []
+    @dogs = []
     @@all << self
   end
 
@@ -28,6 +28,10 @@ class Owner
 
   def self.reset_all
     self.all.clear
+  end
+
+  def cat_collector
+    @cats << self
   end
 
   def cats
