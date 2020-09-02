@@ -43,5 +43,5 @@ class Owner
     Dog.new(dog, self)
   end
 
-  
+
 end
