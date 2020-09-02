@@ -31,23 +31,10 @@ class Owner
   end
 
   def cats
-    @cats
+    
   end
 
   def dogs
     @dogs
   end
-
-  def buy_cat
-
-  end
-
-  def buy_dog
-
-  end
-
-  def list_pets
-    @@pets
-  end
-
 end
