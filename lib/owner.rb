@@ -30,8 +30,8 @@ class Owner
     self.all.clear
   end
 
-  def cats(owner)
-    my_cat = Cats.all.select { |owner| self.owner }
+  def cats
+    my_cat = Cat.all.select { |owner| self.owner }
     @cats << my_cat
     @cats
   end
